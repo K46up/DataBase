@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="764.0" style="-fx-background-color: #2a2539;" styleClass="#2a2539" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="root.controller.controller.MainController">
+    <children>
+        <Button fx:id="editButton" layoutX="21.0" layoutY="478.0" mnemonicParsing="false" onAction="#editItem" prefHeight="39.0" prefWidth="253.0" style="-fx-background-color: #bdd3cc;" text="Редактировать выделенную запись">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <TabPane fx:id="tabPane" layoutX="21.0" layoutY="85.0" prefHeight="39.0" prefWidth="722.0" style="-fx-background-color: #2a2539;" tabClosingPolicy="UNAVAILABLE" />
+        <Button fx:id="addButton" layoutX="286.0" layoutY="478.0" mnemonicParsing="false" onAction="#addItem" prefHeight="39.0" prefWidth="193.0" style="-fx-background-color: #bdd3cc;" text="Создать новую запись">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="deleteButton" layoutX="493.0" layoutY="478.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="39.0" prefWidth="253.0" style="-fx-background-color: #bdd3cc;" text="Удалить выделенную запись" textFill="RED">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <ListView fx:id="listView" layoutX="21.0" layoutY="114.0" prefHeight="356.0" prefWidth="722.0" style="-fx-background-color: #efc8с8;" />
+      <TextField fx:id="searchTextField" layoutX="21.0" layoutY="14.0" prefHeight="29.0" prefWidth="601.0" promptText="Поиск..." style="-fx-background-color: #efc8с8;" />
+      <Button fx:id="showChartFormButton" layoutX="632.0" layoutY="14.0" mnemonicParsing="false" onAction="#showCharForm" prefHeight="29.0" prefWidth="114.0" style="-fx-background-color: #bdd3cc;" text="Статистика" />
+    </children>
+</AnchorPane>

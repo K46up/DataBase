@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="root.controller.controller.dialog.ScheduleControlDialogController">
+    <children>
+        <Button fx:id="saveButton" layoutX="28.0" layoutY="164.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="347.0" text="Сохранить" />
+      <DatePicker fx:id="datePicker" layoutX="28.0" layoutY="22.0" prefHeight="25.0" prefWidth="347.0" promptText="Дата занятий" />
+      <ComboBox fx:id="groupComboBox" layoutX="28.0" layoutY="93.0" prefHeight="25.0" prefWidth="347.0" promptText="Группа" />
+      <ComboBox fx:id="employeeComboBox" layoutX="28.0" layoutY="128.0" prefHeight="25.0" prefWidth="347.0" promptText="Тренер" />
+      <TextField fx:id="timeTextField" layoutX="28.0" layoutY="56.0" prefHeight="25.0" prefWidth="347.0" promptText="Время занятий" />
+    </children>
+</AnchorPane>
